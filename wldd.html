@@ -5,43 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WLDD Website</title>
     <link rel="stylesheet" href="css.css" />
-    <style>
-      
-    </style>
   </head>
   <body>
     <header>
       <nav class="nav">
         <div class="logo">
-          <img src="/assets/logo.jpg" alt="wldd logo" />
+          <img src="/assets/logo.png" alt="WLDD Logo" />
         </div>
         <div class="menu">
           <ul class="nav-list">
-            <li class="nav-items">Home</li>
-            <li class="nav-items">about us</li>
-            <li class="nav-items">campaign</li>
-            <li class="nav-items">our services</li>
-            <li class="nav-items">client</li>
-            <li class="nav-items">why us?</li>
+            <li class="nav-items"><a href="#home">Home</a></li>
+            <li class="nav-items"><a href="#">About Us</a></li>
+            <li class="nav-items"><a href="#">Campaign</a></li>
+            <li class="nav-items"><a href="#">Our Services</a></li>
+            <li class="nav-items"><a href="#">Client</a></li>
+            <li class="nav-items"><a href="#">Why Us?</a></li>
           </ul>
+          <button class="button" role="button">Enquire Now</button>
         </div>
-
-        <button class="button" role="button">enquire now</button>
       </nav>
     </header>
+
     <main>
-      <section class="home">
+      <section id="home" class="home">
         <div class="container">
-          <div class="left">
-            <h3>Welcome to</h3>
-            <img src="assets/logo.jpg" alt="" />
+          <div class="hero">
+            <div class="left">
+              <h1 class="title">Welcome to</h1>
+              <img src="assets/logo.png" alt="WLDD Logo" />
+            </div>
+            <div class="right">
+              <img src="/assets/visual-image.png" alt="Visual Image" />
+            </div>
           </div>
-          <div class="right">
-            <img src="/assets/visual-image.png" alt="" />
+
+          <div class="marquee-container">
+            <div class="marquee-line">
+              <marquee class="marquee" behavior="scroll" direction="left"
+                >#the meme republic #the meme republic #the meme republic #the
+                meme republic</marquee
+              >
+            </div>
           </div>
+        </div> 
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+            <img src="assets/" alt="">
+            <h3></h3><span><img src="" alt=""></span>
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer>
+      <!-- <p>&copy; 2024 WLDD. All rights reserved.</p> -->
+    </footer>
   </body>
 </html>
