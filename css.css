@@ -1,0 +1,110 @@
+:root {
+  --main-color: #fdd300;
+  --secondary-color: #f6cd31;
+  --bg-color: #12141c;
+  --white-color: #eeeeff;
+  --black-color: #000000;
+  --font-color: #2c3e50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: var(--bg-color);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+.nav-items {
+  text-transform: capitalize;
+  cursor: pointer;
+  color: var(--font-color);
+}
+.button {
+  appearance: button;
+  background-color: var(--main-color);
+  background-image: none;
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+  box-shadow: var(--black-color) 4px 4px 0 0, var(--black-color) 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: var(--font-color);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 0 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.button:focus,
+.button:hover {
+  text-decoration: none;
+}
+.button:active {
+  box-shadow: var(--black-color) 0 3px 5px inset;
+  outline: 0;
+}
+.button:not([disabled]):active {
+  box-shadow: var(--secondary-color) 2px 2px 0 0,
+    var(--black-color) 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+/* Main section */
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+}
+.left,
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left img,
+.right img {
+  max-width: 100%;
+  height: auto;
+}
