@@ -137,7 +137,6 @@ header {
   }
 
   .nav-items {
-    padding: 4px 0;
     width: 100%;
     text-align: center;
   }
@@ -167,6 +166,11 @@ header {
 
   .burger.active .line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .nav-list {
+    gap: 1rem;
   }
 }
 
