@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WLDD Website</title>
     <link rel="stylesheet" href="css.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lazer+84&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      
+    </style>
   </head>
   <body>
     <header>
@@ -13,20 +20,28 @@
           <img src="/assets/logo.png" alt="WLDD Logo" />
         </div>
         <div class="menu">
-          <ul class="nav-list">
+          <!-- Burger icon for mobile -->
+          <div class="burger" id="burger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul class="nav-list" id="navList">
             <li class="nav-items"><a href="#home">Home</a></li>
-            <li class="nav-items"><a href="#">About Us</a></li>
-            <li class="nav-items"><a href="#">Campaign</a></li>
-            <li class="nav-items"><a href="#">Our Services</a></li>
-            <li class="nav-items"><a href="#">Client</a></li>
-            <li class="nav-items"><a href="#">Why Us?</a></li>
+            <li class="nav-items"><a href="#about">About Us</a></li>
+            <li class="nav-items"><a href="#campaign">Campaign</a></li>
+            <li class="nav-items"><a href="#services">Our Services</a></li>
+            <li class="nav-items"><a href="#client">Client</a></li>
+            <li class="nav-items"><a href="#why_us">Why Us?</a></li>
+            <li class="nav-items">
+              <button class="button" role="button">Enquire Now</button>
+            </li>
           </ul>
-          <button class="button" role="button">Enquire Now</button>
         </div>
       </nav>
     </header>
 
-    <main>
+    <!-- <main>
       <section id="home" class="home">
         <div class="container">
           <div class="hero">
@@ -41,25 +56,32 @@
 
           <div class="marquee-container">
             <div class="marquee-line">
-              <marquee class="marquee" behavior="scroll" direction="left"
-                >#the meme republic #the meme republic #the meme republic #the
-                meme republic</marquee
-              >
+              <p class="marquee">
+                * the meme republic * the meme republic * the meme republic *
+                the meme republic
+              </p>
+              <p class="marquee">
+                * the meme republic * the meme republic * the meme republic *
+                the meme republic
+              </p>
             </div>
           </div>
-        </div> 
         </div>
       </section>
-      <section class="about">
-        <div class="container">
-            <img src="assets/" alt="">
-            <h3></h3><span><img src="" alt=""></span>
+      <section id="about" class="about">
+        <div class="about_container">
+          <img src="assets/life-art.png" alt="Life Art" />
+          <h3>
+            We help brands connect better to their audience with meme culture.
+          </h3>
+          <span><img src="assets/star.png" alt="Star" /></span>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <footer>
       <!-- <p>&copy; 2024 WLDD. All rights reserved.</p> -->
     </footer>
+    <script src="/wldd.js"></script>
   </body>
 </html>
