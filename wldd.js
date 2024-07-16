@@ -11,5 +11,6 @@ navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     const navList = document.getElementById("navList");
     navList.classList.remove("active");
+    burger.classList.remove("active");
   });
 });
