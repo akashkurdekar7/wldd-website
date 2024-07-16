@@ -300,3 +300,72 @@ section {
 .about_container span {
   position: absolute;
 }
+
+/* footer */
+footer {
+  width: 100vw;
+}
+.foot {
+  background-color: var(--main-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.four {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.foot span {
+  margin: 0 10px;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.foot span::before {
+  content: "|";
+  margin-right: 10px;
+}
+
+.foot span:first-child::before {
+  content: "";
+  margin: 0;
+}
+.foot span:nth-child(5)::before {
+  content: "";
+  margin: 0;
+}
+
+.foot span:last-child::before {
+  content: "";
+  margin: 0;
+}
+
+.foot .socials {
+  /* margin-left: auto; */
+  display: flex;
+  gap: 10px;
+}
+
+/* For cleaner spacing and separator adjustments */
+.foot span + span::before {
+  content: "|";
+}
+
+.foot span:nth-child(5)::after {
+  content: "|";
+  margin-left: 10px;
+}
+
+.foot span:nth-child(6)::before {
+  content: "";
+}
+.foot span:nth-child(6)::after {
+  content: "|";
+  margin-left: 10px;
+}
